@@ -20,6 +20,13 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
 .container .card {
     display: grid;
     cursor: pointer;
@@ -51,7 +58,7 @@ body {
 }
 
 .container .card .face.face1 .content {
-    opacity: 0.2;
+    opacity: 0.85;
     transition: 0.5s;
 }
 
